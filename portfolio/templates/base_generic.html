@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}
+        <title>KABANGA David</title>
+        {% endblock %}
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            body {
+                font-family: "Helvetica Neue",sans-serif;
+                font-weight: lighter;
+            }
+            header {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                height: 105px;
+                border-bottom: 1px solid #eee;
+                background-image: linear-gradient(#eee, lightsteelblue);
+                background-attachment: fixed;
+                color:
+            }
+            .menu-items a {
+                margin: 25px;
+                position: relative;
+                top: 40px;
+                font-size: 20px;
+                color: black;
+            }
+
+            .menu-items a:hover{
+                text-decoration: none;
+            }
+            
+            footer {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: 40px;
+            }
+
+            .row {
+                padding-top: 70px;
+            }
+            section {
+                border-bottom: 1px solid #eee;
+            }
+            .section-title {
+                text-align: center;
+                margin-top: 50px;
+            }
+            .social-media {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                font-size: 30px;
+            }
+            .social-media i {
+                margin: 15px;
+            }
+
+        </style>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu-items">
+                <a href="#">HOME <i class="fa fa-home"></i></a>
+                <a href="#">PROJECTS <i class="fa fa-code"></i></a>
+                <a href="#">CONTACT ME <i class="fa fa-phone"></i></a>
+                <a href="#">Blog <i class="fa fa-book"></i></a>
+            </div>
+        </header>
+        <div class="container">
+        {% block content %}
+
+        {% endblock %}
+        </div>
+        </div>
+
+        <footer>
+            KABANGA DAVID &copy; 2021 - made with ❤ and Django
+        </footer>
+        <script>
+       
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </body>
+</html>
